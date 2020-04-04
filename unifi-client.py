@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import yaml
 from Unifi import Unifi
 import paho.mqtt.client as mqtt
