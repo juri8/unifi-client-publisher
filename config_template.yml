@@ -1,4 +1,4 @@
-default:
+unifi:
     url:  https://localhost:8443
     site: <name of site>
     user: <user to access unifi controller>

@@ -6,7 +6,7 @@ import requests
 with open("config.yml", "r") as ymlfile:
     cfg = yaml.safe_load(ymlfile)
 
-config = cfg["default"]
+config = cfg["unifi"]
 url = config["url"]
 api = url + "/api/s/" + config["site"]
 
