@@ -3,3 +3,9 @@ unifi:
     site: <name of site>
     user: <user to access unifi controller>
     passwd: <password of user>
+
+mqtt:
+    host: <mqtt server>
+    user: <optional>
+    passwd: <required if username is set>
+    baseTopic: <the topic where to put the clint information below>
