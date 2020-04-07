@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
+import sys
+
 import yaml
 from Unifi import Unifi
 import paho.mqtt.publish as publish
 
-with open("config.yml", "r") as ymlfile:
+with open(sys.path[0] + "/config.yml", "r") as ymlfile:
     cfg = yaml.safe_load(ymlfile)
 
 unifi = Unifi.login(cfg['unifi'])
