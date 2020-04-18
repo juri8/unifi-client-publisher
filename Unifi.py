@@ -23,3 +23,5 @@ class Unifi:
     def get_clients(self):
         return self.session.get(self.api + "/rest/user", verify=False)
 
+    def get_clientstats(self):
+        return self.session.get(self.api + "/stat/sta", verify=False)
